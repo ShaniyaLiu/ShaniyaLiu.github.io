@@ -1,0 +1,123 @@
+.container {
+    width: 100%;
+    padding: 30px;
+    margin: 50px auto;
+    text-align: center;
+}
+.myphoto{
+    width: 160px;
+    border-radius: 60px;
+}
+h1 {
+    font-size: 30px;
+    color: #102f55;
+    font-family: sans-serif;
+    letter-spacing:4px;
+}
+h2 {
+    font-size: 18px;
+    color: #782110;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing:4px;
+            
+}
+.info {
+    font-style: 14px;
+    color: #515151;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+.button {
+    position: relative;
+    display: block;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.icon {
+    width: 40px;
+    vertical-align: middle;
+    position: absolute;
+    top: 3px;
+    left: 50px;
+}
+.icon2 {
+    width: 40px;
+    vertical-align: middle;
+    position: absolute;
+    top: 3px;
+    left: 50px;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #888;
+    border-radius: 50%;
+}
+.top div {
+    width: 16px;
+    height: 16px;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(45deg);
+}
+.works {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.work-item {
+    line-height: 0;
+}
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1;
+    filter: grayscale(70%);
+}
+.work-item img:hover {
+    filter: brightness(120%);
+}
+
+.box {
+    position:relative;
+    inset: 20px 30px 20px 30px;
+     background-color: rgba(253, 219, 156, 0.349);
+    pointer-events: none;
+
+}
+
+@media (min-width:700px) {
+    .container {
+        width: 600px;
+    }
+    .works {
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+
+@media print {
+    .photo {
+        display: none;
+    }
+    h1 {
+        font-size: 200px;
+    }
+
+}
